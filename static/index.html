@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>JeilStudentWEB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white do" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light" style="font-size: 20pt;">순천제일고<br>학생 홈페이지</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://jeilstudent.netlify.app/">웹 정보</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">실시간 채팅</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://jeilstudent.netlify.app/chat.html">챗봇</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://jeilstudent.netlify.app/board.html">홍보 및 게시판</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://jeilstudent.netlify.app/school.html">순천제일고</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid or">
+                        <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid or">
+                  <div id="main">
+                    <div id="chat">
+                      <!-- 채팅 메시지 영역 -->
+                    </div>
+                    <div>
+                      <input type="text" id="test" placeholder="메시지를 입력해주세요..">
+                      <button onclick="send()">전송</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+    </body>
+    <footer class="footer mt-auto py-3 bg-light pl">
+        <div class="container" style = "text-align:center; font-size: 15pt;">
+                <span class="text-muted">JustDoIT</span>
+        </div>
+    </footer>
+</html>
